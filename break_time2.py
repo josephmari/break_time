@@ -1,12 +1,13 @@
 import webbrowser
 import time
 
-x = 1
+total_breaks = 3
+break_count = 0
 
 print("This program started at" +time.ctime())
 
-while x < 5:
+while(break_count < total_breaks):
     time.sleep(5)
     webbrowser.open("http://ny.eater.com/")
-    x = x + 1
+    break_count = break_count + 1
 
